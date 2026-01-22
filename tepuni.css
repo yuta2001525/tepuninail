@@ -15,12 +15,13 @@ body {
 /* ヘッダー */
 .header {
   text-align: center;
-  padding: 24px 0;
+  background-color: #d8bff7;
 }
 
-.shop-name {
-  font-size: 24px;
-  font-weight: 500;
+.header img {
+  height: 100px;
+  width: auto;
+  object-fit: cover;
 }
 
 /* メイン画像 */
@@ -37,9 +38,25 @@ body {
 }
 
 .copy h2 {
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 1.5rem; /* タイトルサイズ */
+  color: #000;  /* 薄紫背景に映える白文字 */
+  text-align: center;
+  font-family: 'Noto Sans JP', sans-serif;
+  position: relative; /* 下線を擬似要素で作るため */
 }
+
+/* 下線デザイン */
+.copy h2:after {
+  content: "";
+  display: block;
+  width: 70%;           /* 線の長さ */
+  height: 4px;          /* 線の太さ */
+  background: linear-gradient(90deg, #D8BFF7); /* グラデーションでおしゃれに */
+  margin: 8px auto 0;   /* タイトル下にスペース */
+  border-radius: 2px;   /* 角を丸くして柔らかく */
+  transform: rotate(-2deg); /* 少し傾けて崩し感 */
+}
+
 
 /* 予約案内 */
 .reserve-intro {
@@ -57,6 +74,8 @@ body {
   padding-left: 5rem;
   font-size: 1rem;
 }
+
+
 
 /* フォームエリア */
 .form-area {
