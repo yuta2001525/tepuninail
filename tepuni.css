@@ -15,7 +15,7 @@ body {
 /* ヘッダー */
 .header {
   text-align: center;
-  background-color: #d8bff7;
+  background-color: #d8d1ee;
 }
 
 .header img {
@@ -71,7 +71,7 @@ body {
 
 .reserve-intro ul {
   list-style: disc;
-  padding-left: 5rem;
+  padding-left: 1rem;
   font-size: 1rem;
 }
 
