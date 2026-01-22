@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN",
+               "Noto Sans JP", sans-serif;
+  color: #000;
+  background: #fff;
+  line-height: 1.6;
+}
+
+/* ヘッダー */
+.header {
+  text-align: center;
+  padding: 24px 0;
+}
+
+.shop-name {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* メイン画像 */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* キャッチコピー */
+.copy {
+  text-align: center;
+  padding: 40px 16px 24px;
+}
+
+.copy h2 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* 予約案内 */
+.reserve-intro {
+  padding: 24px 16px;
+}
+
+.reserve-intro h3 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.reserve-intro ul {
+  list-style: disc;
+  padding-left: 5rem;
+  font-size: 1rem;
+}
+
+/* フォームエリア */
+.form-area {
+  display: block;
+  padding: 24px 16px 40px;
+  text-align: center;
+}
+.form-area h3{
+  margin-bottom: 2rem;
+}
+
+/* 基本：スマホ優先 */
+.reservation-container {
+  width: 100%;         /* 画面いっぱい */
+  padding: 10px;       /* 内側余白 */
+  box-sizing: border-box;
+}
+
+.reservation-iframe {
+  width: 100%;
+  height: 500px;      /* 縦長でスマホでも見やすい */
+  padding-top: 0;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* PC向けに余白を少し広げる */
+@media (min-width: 768px) {
+  .reservation-container {
+    max-width: 600px;  /* 横幅を制限 */
+    margin: 0 auto;    /* 中央寄せ */
+    padding: 20px;
+  }
+
+  .reservation-iframe {
+    height: 900px;     /* PCは少し短めでもOK */
+  }
+}
