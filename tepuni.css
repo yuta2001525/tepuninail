@@ -23,6 +23,9 @@ body {
   width: auto;
   object-fit: cover;
 }
+.cyuui p{
+  font-size: 14px;
+}
 
 /* メイン画像 */
 .hero img {
@@ -101,6 +104,12 @@ body {
   border: 0;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.copyright{
+  background-color: #d8d1ee;
+  text-align: center;
+  padding: 1rem 0;
 }
 
 /* PC向けに余白を少し広げる */
