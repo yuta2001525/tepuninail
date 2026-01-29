@@ -105,6 +105,22 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+.reservation-embed {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* iframe自体をスクロール可能にする */
+.reservation-embed iframe {
+  width: 100%;
+  height: 80vh;              /* ← スマホで一番大事 */
+  border: none;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+
 
 .copyright{
   background-color: #d8d1ee;
