@@ -90,53 +90,30 @@ body {
   margin-bottom: 2rem;
 }
 
-/* 基本：スマホ優先 */
-.reservation-container {
-  width: 100%;         /* 画面いっぱい */
-  padding: 10px;       /* 内側余白 */
-  box-sizing: border-box;
+.reservation-button {
+  display: block;
+  width: 50%;
+  max-width: 360px;
+  margin: 32px auto;
+  padding: 16px 0;
+  background-color: #8b7cc6;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 999px;
 }
 
-.reservation-iframe {
-  width: 100%;
-  height: 500px;      /* 縦長でスマホでも見やすい */
-  padding-top: 0;
-  border: 0;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.reservation-button:active {
+  opacity: 0.8;
 }
-.reservation-embed {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-/* iframe自体をスクロール可能にする */
-.reservation-embed iframe {
-  width: 100%;
-  height: 100vh;              /* ← スマホで一番大事 */
-  border: none;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-
 
 .copyright{
   background-color: #d8d1ee;
   text-align: center;
-  padding: 1rem 0;
-}
+  padding: 1.5rem 0;
+  margin-top: 4rem;
+  color: #000;
 
-/* PC向けに余白を少し広げる */
-@media (min-width: 768px) {
-  .reservation-container {
-    max-width: 600px;  /* 横幅を制限 */
-    margin: 0 auto;    /* 中央寄せ */
-    padding: 20px;
-  }
-
-  .reservation-iframe {
-    height: 900px;     /* PCは少し短めでもOK */
-  }
 }
